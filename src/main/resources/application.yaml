@@ -1,0 +1,17 @@
+server:
+  port: '8081'
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/Practice'
+    username: yaantrac
+    password: yaantrac2022
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
